@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
+body {
+	margin: 0;
+	background-color: #bdc3c7;
+	font-family: 'Fjalla One', sans-serif;
+
+}
+* 	{box-sizing: border-box;}
+
+.ui-sortable {
+	min-height: 80px;
+}
+.btn-delete {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 22px;
+	height: 22px;
+	border: 0;
+	background-color: rgba(0,0,0,0.4);
+	color: red;
+	border-radius: 10px;
+	font-weight: 600;
+}
+
+.column .btn-delete:hover {
+	cursor: pointer;
+	color: #fff;
+}
+
+/* BOARD */
+.board h1 {
+	text-align: center;
+	font-weight: 900;
+	margin-bottom: 30px;
+	font-size: 70px;
+}
+
+.create-column { 
+	min-width: 80px;
+	padding: 10px;
+	background-color: #f1c40f;
+	font-size: 18px;
+	color: #252839;
+	border: 1px solid #f1c40f;
+	margin: 20px 20px;
+	border-radius: 10px;
+	text-align: center;
+	display: block;
+	margin: 20px auto;	
+	font-weight: 600;
+}	
+
+.create-column:hover {
+	background-color: #f39c12;
+	cursor: pointer;
+}	
+
+.column-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+}
+
+/* COLUMN */
+.column {
+	order: 1;
+	min-width: 300px;
+	min-height: 50vh;
+	background-color: #3498db;
+	margin-left: 8px;
+	list-style: none;
+	position: relative;
+	border-radius: 10px;
+	margin-left: 35px;
+}
+.column-add-card {
+	cursor: pointer;
+	background-color: #f1c40f;
+	margin: 5px 8px;
+	display: block;
+	padding: 10px;
+	border: 1px solid #f1c40f;
+	border-radius: 10px;
+	font-weight: 600;
+}
+
+.column-add-card:hover {
+	background-color: #f39c12;
+	cursor: pointer;
+}	
+
+h2.column-title {
+	padding: 5px;
+	text-align: center;
+}
+
+/* STYLE KARTY */
+.card {
+	box-sizing: border-box;
+	display: block;
+	height: 60px;
+	margin-bottom: 5px;
+	padding: 4px;
+	overflow: hidden;
+	position: relative;
+}
+.card-list {
+	list-style: none;
+	margin: 1px;
+	padding: 0px;
+}
+.card-description {
+	margin: 10px 10px;
+}
+.card-placeholder {
+	box-sizing: border-box;
+	display: block;
+	height: 60px;
+	margin-bottom: 5px;
+	background-color: #2980b9;
+}
